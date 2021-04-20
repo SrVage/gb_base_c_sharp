@@ -2,7 +2,7 @@
 
 namespace Code
 {
-    public class SpeedBonus:Bonus
+    public class SpeedBonus:Bonus, IPingPong
     {
         private bool _isActive = true;
         private Vector3 _position;
@@ -19,7 +19,13 @@ namespace Code
         protected override void SetBonus()
         {
             base.SetBonus();
-            _player.ChangeSpeed(_changeSpeed);
+            _player.GetComponent<IChangeSpeed>().ChangeSpeed(_changeSpeed);
+        }
+
+        public void PingPong()
+        {
+            transform.localPosition = new Vector3(transform.localPosition.x, Mathf.PingPong(Time.time, 3.0f),
+                transform.localPosition.z);
         }
     }
 }

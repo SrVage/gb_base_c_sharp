@@ -2,7 +2,7 @@
 
 namespace Code
 {
-    public class DamageTrap:Trap
+    public class DamageTrap:Trap, ISetDamage
     {
         private bool _isActive;
         private Vector3 _position;
@@ -16,10 +16,12 @@ namespace Code
             _isActive = true;
         }
 
-        protected override void Damage()
+        public void Damage()
         {
-            base.Damage();
-            _player.Damage(_damage);
+            _damage = Random.Range(0.2f, 1.5f);
+            print(_damage);
+            _player = GameObject.FindObjectOfType<Player>().GetComponent<Player>();
+            _player.GetComponent<IGetDamage>().GetDamage(_damage);
         }
     }
 }

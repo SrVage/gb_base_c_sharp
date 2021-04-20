@@ -1,7 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1b9ab02d-4ae5-4153-9118-780754da3263" name="Default Changelist" comment="" />
+    <list default="true" id="1b9ab02d-4ae5-4153-9118-780754da3263" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.gb_base_c_sharp/.idea/contentModel.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.gb_base_c_sharp/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.gb_base_c_sharp/.idea/indexLayout.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.gb_base_c_sharp/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.gb_base_c_sharp/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.gb_base_c_sharp/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.gb_base_c_sharp/riderModule.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/DamageTrap.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/DamageTrap.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Player.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/SceneObjects.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/SceneObjects.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/SpeedBonus.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/SpeedBonus.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/SpeedTrap.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/SpeedTrap.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Trap.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Trap.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -10,20 +23,37 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/../geekbrains/Roll a ball/Assets/Test/DoorController.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../geekbrains/Roll a ball/Assets/Test/Starter.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../geekbrains/Roll a ball/Assets/Test/DoorBehaviour.cs" root0="SKIP_HIGHLIGHTING" />
+  </component>
   <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/Assets/Code/Trap.cs" />
-        <option value="$PROJECT_DIR$/Assets/Code/DamageTrap.cs" />
-        <option value="$PROJECT_DIR$/Assets/Code/SpeedTrap.cs" />
-        <option value="$PROJECT_DIR$/Assets/Code/Bonus.cs" />
-        <option value="$PROJECT_DIR$/Assets/Code/SpeedBonus.cs" />
-        <option value="$PROJECT_DIR$/Assets/Code/Player.cs" />
-        <option value="$PROJECT_DIR$/Assets/Code/HealthBonus.cs" />
-      </list>
-    </option>
+    <changedPaths>
+      <option value="$PROJECT_DIR$/Assets/Code/IMove.cs" />
+      <option value="$PROJECT_DIR$/Assets/Code/IChangeSpeed.cs" />
+      <option value="$PROJECT_DIR$/Assets/Code/INeedGetForWin.cs" />
+      <option value="$PROJECT_DIR$/Assets/Code/WinBonus.cs" />
+      <option value="$PROJECT_DIR$/Assets/Code/ListInteractableObject.cs" />
+      <option value="$PROJECT_DIR$/Assets/Code/Test.cs" />
+      <option value="$PROJECT_DIR$/Assets/Code/Compare.cs" />
+      <option value="$PROJECT_DIR$/Assets/Code/ListOfBonus.cs" />
+      <option value="$PROJECT_DIR$/Assets/Code/PingPong.cs" />
+      <option value="$PROJECT_DIR$/Assets/Code/SpeedBonus.cs" />
+      <option value="$PROJECT_DIR$/Assets/Code/PlayerController.cs" />
+      <option value="$PROJECT_DIR$/Assets/Code/IRotation.cs" />
+      <option value="$PROJECT_DIR$/Assets/Code/Trap.cs" />
+      <option value="$PROJECT_DIR$/Assets/Code/IGetDamage.cs" />
+      <option value="$PROJECT_DIR$/Assets/Code/SceneObjects.cs" />
+      <option value="$PROJECT_DIR$/Assets/Code/SpeedTrap.cs" />
+      <option value="$PROJECT_DIR$/Assets/Code/DamageTrap.cs" />
+      <option value="$PROJECT_DIR$/Assets/Code/Player.cs" />
+    </changedPaths>
   </component>
   <component name="ProjectId" id="1rEuyZZFQBdi7ZeEOxH1kb4pl3F" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -39,8 +69,9 @@
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
       <option name="pid" />
+      <option name="projectPathOnTarget" />
       <option name="selectedOptions">
-        <set />
+        <list />
       </option>
       <method v="2" />
     </configuration>
@@ -48,8 +79,9 @@
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
       <option name="pid" />
+      <option name="projectPathOnTarget" />
       <option name="selectedOptions">
-        <set />
+        <list />
       </option>
       <method v="2" />
     </configuration>
@@ -63,6 +95,7 @@
       <option name="presentableId" value="Default" />
       <updated>1618553827808</updated>
       <workItem from="1618553836083" duration="3965000" />
+      <workItem from="1618892499703" duration="14497000" />
     </task>
     <servers />
   </component>
@@ -71,6 +104,17 @@
   </component>
   <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="EditMode" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>

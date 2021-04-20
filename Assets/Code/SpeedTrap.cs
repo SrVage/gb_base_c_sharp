@@ -2,7 +2,7 @@
 
 namespace Code
 {
-    public class SpeedTrap:Trap
+    public class SpeedTrap:Trap, ISetDamage
     {
         private bool _isActive = true;
         private Vector3 _position;
@@ -16,10 +16,10 @@ namespace Code
             _isActive = true;
         }
         
-        protected override void Damage()
+        public void Damage()
         {
-            base.Damage();
-            _player.ChangeSpeed(-_changeSpeed);
+            _player = GameObject.FindObjectOfType<Player>().GetComponent<Player>();
+            _player.GetComponent<IChangeSpeed>().ChangeSpeed(_changeSpeed);
         }
     }
 }
