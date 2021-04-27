@@ -1,18 +1,29 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 
 namespace Code
 {
     public sealed class Player:SceneObjects, IGetDamage, IMove, IRotation, IChangeSpeed
     {
+        public event Action DestroyPlayer;
+        
         private Transform _position;
         private Transform _direction;
         private float _hp = 3;
-        private float _speed = 0.05f;
+        [SerializeField] private float _speed = 0.05f;
 
         public void Move() //перемещение игрока
         {
-            //_position.position += new Vector3(0, 0, _speed);
-            transform.localPosition += transform.forward*_speed; //потом передам в другой класс
+            try
+            {
+                if (_speed < 0)
+                    throw new LessNullException("Скорость не может быть меньше 0", _speed);
+                transform.localPosition += transform.forward*_speed;
+            }
+            catch (LessNullException e)
+            {
+               Debug.Log($"{e.Message}, текущая скорость {e.Value}");
+            }
         }
 
         public void Rotation(float direct) //поворот игрока
@@ -40,6 +51,7 @@ namespace Code
 
         private void EndOfGame() //завершение игры
         {
+            DestroyPlayer?.Invoke();
             Destroy(gameObject);
         }
     }

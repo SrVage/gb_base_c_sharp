@@ -12,6 +12,7 @@ namespace Code
         public ListOfBonus()
         {
             _bonus = UnityEngine.Object.FindObjectsOfType<Bonus>();
+            
         }
 
         public Bonus this [int index]

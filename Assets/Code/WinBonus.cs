@@ -1,12 +1,15 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 
 namespace Code
 {
     public class WinBonus:Bonus, INeedGetForWin
     {
+        public event Action <string> GetBonus;
+        
         private bool _isActive = true;
         private Vector3 _position;
-        private SceneObjects SceneObjects = new SceneObjects();
+        private SceneObjects SceneObjects;
         
         public WinBonus (Vector3 position)
         {
@@ -14,10 +17,12 @@ namespace Code
             _isActive = true;
             
         }
-
+        
         public void GetWinBonus()
         {
-            SceneObjects.GetWinBonus();
+            //SceneObjects.GetWinBonus();
+            GetBonus?.Invoke(gameObject.name);
+            
         }
     }
 }

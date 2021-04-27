@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 
 namespace Code
 {
@@ -14,8 +15,9 @@ namespace Code
        public void Execute()
        {
            if (Input.GetKey(KeyCode.UpArrow))
-               model.Move();
-           else model.Rotation(Input.GetAxis("Horizontal")); 
+                   model.Move();
+           if (Input.GetAxis("Horizontal")!=0)
+               model.Rotation(Input.GetAxis("Horizontal"));
        }
     }
 }

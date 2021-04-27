@@ -2,6 +2,8 @@
 {
     public abstract class Bonus:SceneObjects
     {
+        
+        
         private bool _isActive;
         
         protected virtual void SetBonus()
