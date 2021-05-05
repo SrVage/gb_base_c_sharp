@@ -7,7 +7,7 @@ namespace Code
         private bool _isActive = true;
         private Vector3 _position;
         private float _hp = 1.5f;
-        private Player _player;
+        private PlayerInteraction _player;
         
         public HealthBonus(Vector3 position)
         {

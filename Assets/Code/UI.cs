@@ -9,14 +9,14 @@ namespace Code
     public class UI : MonoBehaviour
     {
         [SerializeField] private Text _scores;
-        private Player _player;
+        private PlayerController _playerController;
         private int _score;
 
         // Start is called before the first frame update
         void Start()
         {
-            _player = FindObjectOfType<Player>();
-            _player.DestroyPlayer += EndGame;
+            _playerController = new PlayerController(null);
+            _playerController.DestroyPlayer += EndGame;
             WinBonus [] comp = FindObjectsOfType<WinBonus>();
             foreach (var a in comp)
             {

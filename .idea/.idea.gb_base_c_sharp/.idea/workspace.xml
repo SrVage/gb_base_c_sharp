@@ -3,13 +3,15 @@
   <component name="ChangeListManager">
     <list default="true" id="1b9ab02d-4ae5-4153-9118-780754da3263" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.gb_base_c_sharp/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.gb_base_c_sharp/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Bonus.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Bonus.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/ListOfBonus.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/ListOfBonus.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Player.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/PlayerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/PlayerController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/HealthBonus.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/HealthBonus.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Model/Player.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Player.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Model/Player.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/PlayerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Controller/PlayerController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/PlayerController.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Controller/PlayerController.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Code/SceneObjects.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/SceneObjects.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/WinBonus.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/WinBonus.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/UI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/UI.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,6 +20,14 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/../geekbrains/Roll a ball/Assets/Test/DoorBehaviour.cs" root0="SKIP_HIGHLIGHTING" />
@@ -44,10 +54,25 @@
       <option value="$PROJECT_DIR$/Assets/Code/ListOfBonus.cs" />
       <option value="$PROJECT_DIR$/Assets/Code/WinBonus.cs" />
       <option value="$PROJECT_DIR$/Assets/Code/LessNullException.cs" />
-      <option value="$PROJECT_DIR$/Assets/Code/SceneObjects.cs" />
       <option value="$PROJECT_DIR$/Assets/Code/Player.cs" />
-      <option value="$PROJECT_DIR$/Assets/Code/UI.cs" />
       <option value="$PROJECT_DIR$/Assets/Code/PlayerController.cs" />
+      <option value="$PROJECT_DIR$/Assets/Code/IInitialization.cs" />
+      <option value="$PROJECT_DIR$/Assets/Code/Interface/IController.cs" />
+      <option value="$PROJECT_DIR$/Assets/Code/Interface/IExecute.cs" />
+      <option value="$PROJECT_DIR$/Assets/Code/Interface/IInitialization.cs" />
+      <option value="$PROJECT_DIR$/Assets/Code/Interface/ILateUpdator.cs" />
+      <option value="$PROJECT_DIR$/Assets/Code/Controller/PlayerInitialization.cs" />
+      <option value="$PROJECT_DIR$/Assets/Code/Controller/Controllers.cs" />
+      <option value="$PROJECT_DIR$/Assets/Code/Controller/GameController.cs" />
+      <option value="$PROJECT_DIR$/Assets/Code/Model/PlayerFactory.cs" />
+      <option value="$PROJECT_DIR$/Assets/Code/HealthBonus.cs" />
+      <option value="$PROJECT_DIR$/Assets/Code/SceneObjects.cs" />
+      <option value="$PROJECT_DIR$/Assets/Code/Controller/GameInitialization.cs" />
+      <option value="$PROJECT_DIR$/Assets/Code/Controller/CameraController.cs" />
+      <option value="$PROJECT_DIR$/Assets/Code/Model/Player.cs" />
+      <option value="$PROJECT_DIR$/Assets/Code/Controller/PlayerController.cs" />
+      <option value="$PROJECT_DIR$/Assets/Code/UI.cs" />
+      <option value="$PROJECT_DIR$/Assets/Code/Model/PlayerInteraction.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1rEuyZZFQBdi7ZeEOxH1kb4pl3F" />
@@ -99,6 +124,8 @@
       <workItem from="1619167802016" duration="5203000" />
       <workItem from="1619173060999" duration="1305000" />
       <workItem from="1619521891666" duration="2773000" />
+      <workItem from="1620104275340" duration="6797000" />
+      <workItem from="1620192610988" duration="4198000" />
     </task>
     <servers />
   </component>

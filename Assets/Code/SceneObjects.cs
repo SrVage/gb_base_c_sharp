@@ -12,7 +12,7 @@ namespace Code
     {
         private WinBonus[] _winBonus;
         private SceneObjects[] _sceneObjects;
-        private Player _player;
+        private PlayerInteraction _player;
         private int _countWinBonus;
         private PlayerController _playerController;
         private Camera _camera;
@@ -23,9 +23,9 @@ namespace Code
             _camera = Camera.main;
             _countWinBonus = _winBonus.Length;
             _sceneObjects = GameObject.FindObjectsOfType<SceneObjects>();
-            _player = GameObject.FindObjectOfType<Player>();
-            _playerController = new PlayerController(_player);
-            _player.DestroyPlayer += ChangeCameraParent;
+            _player = GameObject.FindObjectOfType<PlayerInteraction>();
+            //_playerController = new PlayerController(_player);
+            //_player.DestroyPlayer += ChangeCameraParent;
         }
 
         private void ChangeCameraParent()
@@ -43,7 +43,7 @@ namespace Code
             }
 
             if (_player == null) return;
-            _playerController.Execute();
+            //_playerController.Execute();
         }
 
         public void GetWinBonus()
