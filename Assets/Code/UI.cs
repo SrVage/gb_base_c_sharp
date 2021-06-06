@@ -15,8 +15,8 @@ namespace Code
         // Start is called before the first frame update
         void Start()
         {
-            _playerController = new PlayerController(null);
-            _playerController.DestroyPlayer += EndGame;
+            /*_playerController = new PlayerController(null);
+            _playerController.DestroyPlayer += EndGame;*/
             WinBonus [] comp = FindObjectsOfType<WinBonus>();
             foreach (var a in comp)
             {

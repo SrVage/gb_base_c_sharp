@@ -8,7 +8,7 @@ namespace Code
         public event Action DestroyPlayer;
         private Player model;
 
-       public PlayerController(GameObject model)
+        public PlayerController(GameObject model)
        {
            this.Model = model.GetComponent<Player>();
        }
@@ -24,7 +24,7 @@ namespace Code
            if (model==null) return;
            if (model.HP<=0) EndOfGame();
            if (Input.GetKey(KeyCode.UpArrow))
-                   Model.Move();
+                   Model.Move(deltaTime);
            if (Input.GetAxis("Horizontal")!=0)
                Model.Rotation(Input.GetAxis("Horizontal"));
        }

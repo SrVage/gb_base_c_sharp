@@ -9,7 +9,7 @@ namespace Code
         private Transform _position;
         private Transform _direction;
         private float _hp = 3;
-        private float _speed = 0.05f;
+        private float _speed = 5f;
 
         public float Speed
         {
@@ -20,13 +20,13 @@ namespace Code
         public float HP => _hp;
 
 
-        public void Move() //перемещение игрока
+        public void Move(float time) //перемещение игрока
         {
             try
             {
                 if (Speed < 0)
                     throw new LessNullException("Скорость не может быть меньше 0", Speed);
-                transform.localPosition += transform.forward*Speed;
+                transform.localPosition += transform.forward*Speed*time;
             }
             catch (LessNullException e)
             {

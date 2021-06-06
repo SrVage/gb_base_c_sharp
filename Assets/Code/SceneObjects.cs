@@ -16,16 +16,16 @@ namespace Code
         private int _countWinBonus;
         private PlayerController _playerController;
         private Camera _camera;
+        private SaveDataRepository _saveDataRepository;
 
         void Start()
         {
             _winBonus = FindObjectsOfType<WinBonus>();
             _camera = Camera.main;
             _countWinBonus = _winBonus.Length;
-            _sceneObjects = GameObject.FindObjectsOfType<SceneObjects>();
-            _player = GameObject.FindObjectOfType<PlayerInteraction>();
-            //_playerController = new PlayerController(_player);
-            //_player.DestroyPlayer += ChangeCameraParent;
+            _sceneObjects = FindObjectsOfType<SceneObjects>();
+            _player = FindObjectOfType<PlayerInteraction>();
+            _saveDataRepository = new SaveDataRepository();
         }
 
         private void ChangeCameraParent()
@@ -40,6 +40,16 @@ namespace Code
                 var sceneObject = _sceneObjects[i];
                 if (sceneObject == null) continue;
                 if (sceneObject is IPingPong pingPong) pingPong.PingPong();
+            }
+
+            if (Input.GetKeyDown(KeyCode.S))
+            {
+                _saveDataRepository.Save(_sceneObjects);
+            }
+
+            if (Input.GetKeyDown(KeyCode.L))
+            {
+                _saveDataRepository.Load(_sceneObjects);
             }
 
             if (_player == null) return;

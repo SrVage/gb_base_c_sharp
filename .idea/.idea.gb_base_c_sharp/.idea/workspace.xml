@@ -2,16 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1b9ab02d-4ae5-4153-9118-780754da3263" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.gb_base_c_sharp/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.gb_base_c_sharp/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.gb_base_c_sharp/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.gb_base_c_sharp/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/HealthBonus.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/HealthBonus.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Model/Player.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Player.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Model/Player.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/PlayerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Controller/PlayerController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/PlayerController.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Controller/PlayerController.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Controller/GameController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Controller/GameController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Controller/GameInitialization.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Controller/GameInitialization.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Controller/PlayerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Controller/PlayerController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/IMove.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/IMove.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Model/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Model/Player.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Model/PlayerFactory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Model/PlayerFactory.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Code/SceneObjects.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/SceneObjects.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Code/UI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/UI.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,12 +37,13 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/../geekbrains/Roll a ball/Assets/Test/DoorBehaviour.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Code/UI.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/0B59F3B6-14A0-4547-A8BF-657DE1E23F2C/6f/e07fb7d4/JsonUtility.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/BE28439F-7B01-4FC3-8435-D198C0640FF7/a1/33c0fa78/Vector3.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../geekbrains/Roll a ball/Assets/Test/Starter.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../geekbrains/Roll a ball/Assets/Test/DoorController.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
-      <option value="$PROJECT_DIR$/Assets/Code/IMove.cs" />
       <option value="$PROJECT_DIR$/Assets/Code/IChangeSpeed.cs" />
       <option value="$PROJECT_DIR$/Assets/Code/INeedGetForWin.cs" />
       <option value="$PROJECT_DIR$/Assets/Code/ListInteractableObject.cs" />
@@ -63,16 +69,28 @@
       <option value="$PROJECT_DIR$/Assets/Code/Interface/ILateUpdator.cs" />
       <option value="$PROJECT_DIR$/Assets/Code/Controller/PlayerInitialization.cs" />
       <option value="$PROJECT_DIR$/Assets/Code/Controller/Controllers.cs" />
+      <option value="$PROJECT_DIR$/Assets/Code/HealthBonus.cs" />
+      <option value="$PROJECT_DIR$/Assets/Code/Controller/CameraController.cs" />
+      <option value="$PROJECT_DIR$/Assets/Code/Model/PlayerInteraction.cs" />
+      <option value="$PROJECT_DIR$/Assets/Code/Model/SavedData.cs" />
+      <option value="$PROJECT_DIR$/Assets/Code/Interface/IData.cs" />
+      <option value="$PROJECT_DIR$/Assets/Code/Model/SaveDataRepository.cs" />
+      <option value="$PROJECT_DIR$/Assets/dataSave/data.bat" />
+      <option value="$PROJECT_DIR$/Assets/Code/UI.cs" />
+      <option value="$PROJECT_DIR$/Assets/Code/SceneObjects.cs" />
+      <option value="$PROJECT_DIR$/Assets/Code/Model/JsonData.cs" />
+      <option value="$PROJECT_DIR$/Assets/Code/Model/Cryptography.cs" />
+      <option value="$PROJECT_DIR$/Assets/Code/RadarView.cs" />
       <option value="$PROJECT_DIR$/Assets/Code/Controller/GameController.cs" />
       <option value="$PROJECT_DIR$/Assets/Code/Model/PlayerFactory.cs" />
-      <option value="$PROJECT_DIR$/Assets/Code/HealthBonus.cs" />
-      <option value="$PROJECT_DIR$/Assets/Code/SceneObjects.cs" />
-      <option value="$PROJECT_DIR$/Assets/Code/Controller/GameInitialization.cs" />
-      <option value="$PROJECT_DIR$/Assets/Code/Controller/CameraController.cs" />
-      <option value="$PROJECT_DIR$/Assets/Code/Model/Player.cs" />
       <option value="$PROJECT_DIR$/Assets/Code/Controller/PlayerController.cs" />
-      <option value="$PROJECT_DIR$/Assets/Code/UI.cs" />
-      <option value="$PROJECT_DIR$/Assets/Code/Model/PlayerInteraction.cs" />
+      <option value="$PROJECT_DIR$/Assets/Code/IMove.cs" />
+      <option value="$PROJECT_DIR$/Assets/Code/Model/Player.cs" />
+      <option value="$PROJECT_DIR$/Assets/Code/Controller/GameInitialization.cs" />
+      <option value="$PROJECT_DIR$/Assets/Code/RadarObj.cs" />
+      <option value="$PROJECT_DIR$/Assets/Code/Controller/RadarController.cs" />
+      <option value="$PROJECT_DIR$/Assets/Code/Coroutines.cs" />
+      <option value="$PROJECT_DIR$/Assets/Code/Controller/PhotoController.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1rEuyZZFQBdi7ZeEOxH1kb4pl3F" />
@@ -126,6 +144,11 @@
       <workItem from="1619521891666" duration="2773000" />
       <workItem from="1620104275340" duration="6797000" />
       <workItem from="1620192610988" duration="4198000" />
+      <workItem from="1622813333086" duration="4491000" />
+      <workItem from="1622875349901" duration="15736000" />
+      <workItem from="1622950943083" duration="7607000" />
+      <workItem from="1622958852082" duration="182000" />
+      <workItem from="1622959052657" duration="15000" />
     </task>
     <servers />
   </component>
