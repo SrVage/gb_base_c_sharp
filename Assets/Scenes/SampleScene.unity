@@ -1326,6 +1326,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 514bc2b53cc34adb879fd027acc1fb3a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _size: 150
+  _map: 1
+  _mapObject: {fileID: 1458226844}
 --- !u!114 &279209118
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2100,10 +2103,10 @@ GameObject:
   m_Component:
   - component: {fileID: 527222248}
   - component: {fileID: 527222247}
-  - component: {fileID: 527222246}
   - component: {fileID: 527222245}
   - component: {fileID: 527222244}
   - component: {fileID: 527222249}
+  - component: {fileID: 527222246}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
@@ -2194,7 +2197,7 @@ Transform:
   m_GameObject: {fileID: 527222243}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -3.6885185, y: 0.5, z: -7.67696}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.9, y: 1.9, z: 1.9}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 4
@@ -2319,7 +2322,7 @@ GameObject:
   - component: {fileID: 585179386}
   - component: {fileID: 585179385}
   - component: {fileID: 585179384}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Plane
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5083,10 +5086,10 @@ RectTransform:
   m_Father: {fileID: 279209115}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 210, y: 110}
+  m_SizeDelta: {x: 60, y: -40}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1458226846
 MonoBehaviour:
@@ -5421,8 +5424,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1580583786}
   - component: {fileID: 1580583789}
-  - component: {fileID: 1580583788}
   - component: {fileID: 1580583787}
+  - component: {fileID: 1580583788}
   m_Layer: 6
   m_Name: Cube (1)
   m_TagString: Untagged
@@ -5476,7 +5479,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
