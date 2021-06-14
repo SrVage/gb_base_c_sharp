@@ -9,6 +9,11 @@ namespace Code
         private float _hp = 3;
         private Player _player;
 
+        private void Awake()
+        {
+            _player = gameObject.GetComponent<Player>();
+        }
+
         public void GetDamage(float damage) //получение урона
         {
             _hp -= damage;
@@ -23,17 +28,6 @@ namespace Code
         public void RestoreHealth(float hp)
         {
             _hp += hp;
-        }
-
-        /*private void EndOfGame() //завершение игры
-        {
-            DestroyPlayer?.Invoke();
-            Destroy(gameObject);
-        }*/
-
-        public PlayerInteraction(Player player)
-        {
-            _player = player;
         }
     }
 }

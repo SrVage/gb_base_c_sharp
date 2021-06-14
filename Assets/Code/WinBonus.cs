@@ -15,14 +15,11 @@ namespace Code
         {
             _position = position;
             _isActive = true;
-            
         }
         
         public void GetWinBonus()
         {
-            //SceneObjects.GetWinBonus();
             GetBonus?.Invoke(gameObject.name);
-            
         }
     }
 }

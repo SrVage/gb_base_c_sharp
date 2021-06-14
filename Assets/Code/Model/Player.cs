@@ -36,8 +36,7 @@ namespace Code
 
         public void Rotation(float direct) //поворот игрока
         {
-            //_direction.rotation *= Quaternion.Euler(0,direct,0);
-            transform.localRotation *= Quaternion.Euler(0,direct,0); //потом передам в другой класс
+            transform.localRotation *= Quaternion.Euler(0,direct,0);
         }
 
 

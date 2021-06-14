@@ -23,9 +23,8 @@ namespace Code
                 Directory.CreateDirectory(_path);
             }
 
-            SavedData[] savePlayer = new SavedData[player.Length];
-
-            for (int i = 0; i < player.Length; i++)
+            SavedData[] savePlayer = new SavedData[player.Length+1];
+            for (int i = 0; i < player.Length-1; i++)
             {
                 savePlayer[i] = new SavedData
                             {
@@ -33,7 +32,15 @@ namespace Code
                                 NameOfObject = player[i].name,
                                 IsEnabled = player[i].isActiveAndEnabled
                             };
+                
             }
+
+            savePlayer[player.Length] = new SavedData
+            {
+                PositionOfObject = Vector3.zero,
+                NameOfObject = PlayerName.Name,
+                IsEnabled = true
+            };
             _data.Save(savePlayer, Path.Combine(_path, _fileName));
         }
 
@@ -42,13 +49,13 @@ namespace Code
             var file = Path.Combine(_path, _fileName);
             if (!File.Exists(file)) return;
             var newPlayer = _data.Load(file);
-            for (int i = 0; i < newPlayer.Length; i++)
+            for (int i = 0; i < newPlayer.Length-2; i++)
             {
                 player[i].transform.position = newPlayer[i].PositionOfObject;
                 player[i].name = newPlayer[i].NameOfObject;
                 player[i].gameObject.SetActive(newPlayer[i].IsEnabled);
             }
-            
+            PlayerName.Name = newPlayer[newPlayer.Length-1].NameOfObject;
         }
     }
 }

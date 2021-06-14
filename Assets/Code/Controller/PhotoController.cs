@@ -30,7 +30,6 @@ namespace Code.Controller
                               
         private IEnumerator DoTapExampleAsync()
         {
-            Debug.Log("Start");
             _camera.gameObject.transform.position = _player.position+new Vector3(0,49.5f,0);
             var y = _player.eulerAngles.y;
             _camera.gameObject.transform.rotation = Quaternion.Euler(new Vector3(90, 0, -y));
@@ -48,7 +47,6 @@ namespace Code.Controller
             var bytes = sc.EncodeToPNG();
             var filename = "map.png";
             File.WriteAllBytes(Path.Combine(_path, filename), bytes);
-            Debug.Log("end");
             AssetDatabase.Refresh();
             _camera.targetTexture = null;
             RenderTexture.active = null;

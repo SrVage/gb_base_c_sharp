@@ -12,10 +12,12 @@ namespace Code.Controller
             CameraController cameraController = new CameraController(Camera.main);
             PhotoController photoController = new PhotoController();
             RadarController radarController = new RadarController(playerInitialization.GetPlayer(), photoController);
+            SceneObjectController sceneObjectController = new SceneObjectController();
             controllers.Add(playerInitialization);
             controllers.Add(playerController);
             controllers.Add(cameraController);
             controllers.Add(radarController);
+            controllers.Add(sceneObjectController);
         }
     }
 }

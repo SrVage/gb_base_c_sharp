@@ -9,6 +9,7 @@ namespace Code
     public class UI : MonoBehaviour
     {
         [SerializeField] private Text _scores;
+        [SerializeField] private Text _playerName;
         private PlayerController _playerController;
         private int _score;
 
@@ -22,6 +23,11 @@ namespace Code
             {
                 a.GetBonus += ChangeScores;
             }
+        }
+
+        public void ChangePlayerName()
+        {
+            _playerName.text = PlayerName.Name;
         }
 
         private void EndGame()
